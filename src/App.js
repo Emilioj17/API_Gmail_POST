@@ -11,16 +11,17 @@ function App() {
 
   async function sendEmail(e, url = "", data = {}) {
     e.preventDefault();
-    console.log(email);
-    // const response = await fetch(url, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(data)
-    // });
-    // console.log("Hola desde createData");
-    // return response.json();
+    // console.log(email);
+
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+    console.log("Hola desde createData");
+    return response.json();
   }
 
   return (
