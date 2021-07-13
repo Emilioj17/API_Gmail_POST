@@ -27,22 +27,6 @@ function App() {
 					// }
 					// )
   }
-  
-
-  // async function sendEmail(e, url = "127.0.0.1:5000/enviarCorreo", data = email) {
-  //   e.preventDefault();
-  //   console.log(email);
-
-  //   const response = await fetch(url, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json"
-  //     },
-  //     body: JSON.stringify(data)
-  //   });
-  //   console.log("Hola desde createData");
-  //   return response.json();
-  // }
 
   return (
     <div className="App">
